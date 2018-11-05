@@ -12,7 +12,6 @@ def hello() -> 'html':
 
 @app.route('/result', methods=['GET', 'POST'])
 def compute_pizza():
-    print(request.form.get('half_2'))
     try:
         pizza_1 = pizza_math(float(request.form['diameter_1']),
                             float(request.form['price_1']),
