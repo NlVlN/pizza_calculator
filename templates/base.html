@@ -1,1 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{ the_title }}</title>
+    </head>
+    <body>
+        <h2>{{ the_title }}</h2>
+        <form method="POST" action='/result'>
+            <table>
+            <p> Use this form to calculate pizza ofert:</p>
+            <tr><td>Diameter:</td><td><input name='diameter_1' type='text'></td></tr>
+            <tr><td>Price:</td><td><input name='price_1' type='text'></td></tr>
+            <tr><td>Half?</td><td><input name='half_1' type="checkbox" value='checked'></td></tr>
 
+            <tr><td>Diameter:</td><td><input name='diameter_2' type='text'></td></tr>
+            <tr><td>Price:</td><td><input name='price_2' type='text'></td></tr>
+            <tr><td>Half?</td><td><input name='half_2' type="checkbox" value='checked'></td></tr>
+            </table>
+            
+            <p><input value= {{ napis }} type='SUBMIT'></p>
+            </form>
+
+    </body>
+</html>
