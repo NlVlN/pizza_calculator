@@ -33,4 +33,4 @@ def compute_pizza():
                             surface_2 = str(pizza_2[0]) + ' cm^2',
                             cm2_price_2 = str(pizza_2[1]) + ' cm^2')
 
-app.run(debug=True)
+app.run(debug=False)
